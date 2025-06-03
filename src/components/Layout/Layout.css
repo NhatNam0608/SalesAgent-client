@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+  
+.sidebar {
+    flex: 1; 
+    background: #f0f2f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.nav-link {
+    text-decoration: none !important;
+    color: #333;
+    font-weight: 500;
+    padding: 16px 8px;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+.nav-link.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-left: 10px;
+}
+
+.btn-login {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-weight: 600;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #222;
+}
+
+.btn-signup {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #eee;
+}
+
+.avatar-link {
+    display: inline-block;
+    margin: 0 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar-link:hover {
+    transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
+}
+
+.avatar-img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Thêm viền mỏng xung quanh avatar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ nhẹ */
+    overflow: hidden;
+}
+
+.avatar-img:hover {
+    border-color: #4CAF50; /* Đổi màu viền khi hover */
+}
+
+
+.main {
+    flex: 4; 
+    background-color: #f4f6f8;
+    padding: 20px;
+    overflow-y: auto;
+}
+  
